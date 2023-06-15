@@ -1,0 +1,9 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+scikit-image = "==0.21.0"
+Pillow = "==9.5.0"
+fs = "*"
