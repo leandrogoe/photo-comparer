@@ -149,12 +149,12 @@ images_folder2 = []
 for image_path in change_prefixes(only_in_folder2, output_folder2, folder2):
     images_folder2.append(image_path)
 
-save_list_to_file(images_folder1, 'results/folder2.txt')
+save_list_to_file(images_folder2, 'results/folder2.txt')
 
 images_duplicated = []
 for image_path1, image_path2 in duplicates:
     images_duplicated.append((f"{image_path1.replace(output_folder1, folder1, 1)} - {image_path2.replace(output_folder1, folder2, 1)}"))
 
-save_list_to_file(images_folder1, 'results/duplicates.txt')
+save_list_to_file(images_duplicated, 'results/duplicates.txt')
 
 
